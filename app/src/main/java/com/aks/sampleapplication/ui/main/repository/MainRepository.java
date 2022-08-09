@@ -23,7 +23,7 @@ public class MainRepository {
 
     @Inject
     public MainRepository(ApiInterface apiInterface) {
-        //do some crude operations
+        this.apiInterface = apiInterface;
     }
 
     public void getUserDataFromWeb(MutableLiveData<List<BaseUserData>> baseUserListMutableLiveData, CompositeDisposable disposable) {

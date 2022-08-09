@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel;
 
 import com.aks.sampleapplication.data.BaseUserData;
 import com.aks.sampleapplication.ui.main.repository.MainRepository;
-import com.aks.sampleapplication.utils.BaseUtilsClass;
 
 import java.util.List;
 
@@ -18,8 +17,6 @@ import io.reactivex.disposables.CompositeDisposable;
 public class MainViewModel extends ViewModel {
     CompositeDisposable disposable;
     private final MutableLiveData<List<BaseUserData>> baseUserListMutableLiveData = new MutableLiveData<>();
-    @Inject
-    BaseUtilsClass baseUtilsClass;
     @Inject
     MainRepository mainRepository;
 
