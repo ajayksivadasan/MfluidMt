@@ -27,7 +27,7 @@ public class SecondMainRepository {
         this.apiInterface = apiInterface;
     }
 
-    public void getChatList(int personId, MutableLiveData<List<MessageDetails>> messageDetailsLiveData, CompositeDisposable disposable) {
+    public void getChatList(String personId, MutableLiveData<List<MessageDetails>> messageDetailsLiveData, CompositeDisposable disposable) {
         Observable<ReceiveMessage> observable = apiInterface.getMessageDetails(String.valueOf(personId));
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

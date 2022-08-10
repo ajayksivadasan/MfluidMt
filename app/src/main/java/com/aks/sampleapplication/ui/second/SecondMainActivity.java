@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.aks.sampleapplication.data.MessageDetails;
 import com.aks.sampleapplication.databinding.ActivitySecondMainBinding;
@@ -31,7 +32,9 @@ public class SecondMainActivity extends AppCompatActivity {
         if (intent != null) {
             rvSecondAdapter = new RvSecondAdapter(getBaseContext(), messageDetailsList, intent.getExtras().getString("avatar", ""));
             mainBinding.rvSecond.setAdapter(rvSecondAdapter);
-            viewModel.getChatList(intent.getExtras().getInt("personId"));
+            mainBinding.rvSecond.setLayoutManager(new LinearLayoutManager(getBaseContext()));
+            String id = intent.getExtras().getString("personId");
+            viewModel.getChatList(id);
         }
     }
 

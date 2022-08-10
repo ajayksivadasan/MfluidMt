@@ -27,7 +27,7 @@ public class SecondMainViewModel extends ViewModel {
         return messageDetailsLiveData;
     }
 
-    public void getChatList(int personId) {
+    public void getChatList(String personId) {
         secondMainRepository.getChatList(personId, messageDetailsLiveData, disposable);
     }
 }

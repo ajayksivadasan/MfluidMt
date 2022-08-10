@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mainRvAdapter = new MainRvAdapter(getBaseContext(), (MainRvAdapter.RvInterface) position -> {
             Intent intent = new Intent(getBaseContext(), SecondMainActivity.class);
             intent.putExtra("personId", userDataList.get(position).getId());
+            intent.putExtra("avatar", userDataList.get(position).getImage());
             startActivity(intent);
         }, userDataList);
         mainBinding.rvMain.setAdapter(mainRvAdapter);
