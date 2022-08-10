@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/llUsersItem"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:ignore="NestedWeights">
@@ -22,7 +23,7 @@
 
         <TextView
             android:id="@+id/tvMessage"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:text="@string/str_message"
@@ -31,11 +32,11 @@
 
         <TextView
             android:id="@+id/tvMessageReceivedTime"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/str_time"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_15sp" />
+            android:textSize="@dimen/dimen_12sp" />
     </LinearLayout>
 </LinearLayout>

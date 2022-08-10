@@ -12,7 +12,6 @@ public class MessageDetails {
     private String time;
 
     public static MessageDetails objectFromData(String str) {
-
         return new Gson().fromJson(str, MessageDetails.class);
     }
 

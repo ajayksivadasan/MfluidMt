@@ -1,10 +1,10 @@
-package com.aks.sampleapplication.ui.main.view_model;
+package com.aks.sampleapplication.ui.main;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.aks.sampleapplication.data.BaseUserData;
-import com.aks.sampleapplication.ui.main.repository.MainRepository;
+import com.aks.sampleapplication.ui.main.MainRepository;
 
 import java.util.List;
 

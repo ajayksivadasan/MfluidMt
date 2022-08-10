@@ -1,4 +1,4 @@
-package com.aks.sampleapplication.ui.main.repository;
+package com.aks.sampleapplication.ui.main;
 
 import android.util.Log;
 

@@ -1,4 +1,4 @@
-package com.aks.sampleapplication.ui.second.view_model;
+package com.aks.sampleapplication.ui.second;
 
 import androidx.lifecycle.ViewModel;
 
