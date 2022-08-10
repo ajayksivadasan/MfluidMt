@@ -9,8 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BaseUserData {
-
-
     @SerializedName("username")
     private String username;
     @SerializedName("image")

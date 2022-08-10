@@ -13,13 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.aks.sampleapplication.R;
 import com.aks.sampleapplication.data.BaseUserData;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainRvAdapter extends RecyclerView.Adapter<MainRvAdapter.ViewHolder> {
-    private Context context;
-    private RvInterface rvInterface;
-   private List<BaseUserData> userDataList=new ArrayList<>();
+    private final Context context;
+    private final RvInterface rvInterface;
+    private List<BaseUserData> userDataList;
 
     public MainRvAdapter(Context context, RvInterface rvInterface, List<BaseUserData> userDataList) {
         this.context = context;
@@ -50,7 +49,7 @@ public class MainRvAdapter extends RecyclerView.Adapter<MainRvAdapter.ViewHolder
     }
 
     public void updateData(List<BaseUserData> userDataList) {
-        this.userDataList=userDataList;
+        this.userDataList = userDataList;
     }
 
     public interface RvInterface {
@@ -68,7 +67,7 @@ public class MainRvAdapter extends RecyclerView.Adapter<MainRvAdapter.ViewHolder
             tvMessageReceivedTime = itemView.findViewById(R.id.tvMessageReceivedTime);
             tvName = itemView.findViewById(R.id.tvName);
             tvMessage = itemView.findViewById(R.id.tvMessage);
-            llUsersItem=itemView.findViewById(R.id.llUsersItem);
+            llUsersItem = itemView.findViewById(R.id.llUsersItem);
         }
     }
 }
